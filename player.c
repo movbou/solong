@@ -19,8 +19,8 @@ void	draw_moves(t_game *game)
 	str = ft_itoa(game->moves);
 	if (!str)
 		free_textures("Failed to allocate memory.", game);
-	mlx_string_put(game->mlx, game->win, 10, 20, 0x00FF00, "Moves : ");
-	mlx_string_put(game->mlx, game->win, 130, 20, 0x00FF00, str);
+	mlx_string_put(game->mlx, game->win, 10, 20, 0xFF0000, "Moves : ");
+	mlx_string_put(game->mlx, game->win, 130, 20, 0xFF0000, str);
 	free(str);
 }
 

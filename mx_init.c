@@ -34,6 +34,6 @@ void	init_game(t_game *game)
 	load_textures(game);
 	map_rendder(game);
 	handle_events(game);
-	mlx_string_put(game->mlx, game->win, 10, 20, 0x00FF00, "Moves :      0");
+	mlx_string_put(game->mlx, game->win, 10, 20, 0xFF0000, "Moves :      0");
 	mlx_loop(game->mlx);
 }
